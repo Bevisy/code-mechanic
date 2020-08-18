@@ -4,10 +4,10 @@ package leetcode
 func twoSum(nums []int, target int) []int {
 	m := make(map[int]int)
 	for i := 0; i < len(nums); i++ {
-		another := target - nums[i]
+		another := target - nums[i] // 计算所需的另外一个目标数字
 		if _, ok := m[another]; ok {
 			return []int{m[another], i}
-		}
+		} // 目标数字存在则返回下标，否则将数字作为 key，原数组下标作为 value 记录在map m 中
 		m[nums[i]] = i
 	}
 	return nil
