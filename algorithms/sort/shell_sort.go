@@ -1,6 +1,7 @@
 package sort
 
 //https://zh.wikipedia.org/wiki/%E5%B8%8C%E5%B0%94%E6%8E%92%E5%BA%8F
+//TODO: 希尔排序算法复杂度和步长相关，实现不同步长的希尔排序，参考wikipedia
 //希尔排序（Shellsort），也称递减增量排序算法，是插入排序的一种更高效的改进版本。希尔排序是非稳定排序算法
 //算法时间复杂度O(n^2) -- 步长为 n/2
 func shellSort(array []int) []int {
