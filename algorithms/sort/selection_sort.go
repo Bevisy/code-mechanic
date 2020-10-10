@@ -1,7 +1,7 @@
 package sort
 
-//算法复杂度O(n^2)
 //选择排序
+//算法时间复杂度O(n^2)
 func selectionSort(array []int) []int {
 	for i := 0; i < len(array); i++ {
 		min := i
