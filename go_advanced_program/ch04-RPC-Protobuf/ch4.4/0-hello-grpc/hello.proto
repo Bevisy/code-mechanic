@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package "github.com/bevisy/hello";
+
+message String {
+  string value = 1;
+}
+
+service HelloService {
+  rpc Hello (String) returns (String);
+}
