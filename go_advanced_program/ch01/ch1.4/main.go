@@ -6,7 +6,7 @@ import (
 
 func main() {
 	var a = []interface{}{123, "abc"}
-	Print(a) 	// 不解包 [123 abc]
+	Print(a)    // 不解包 [123 abc]
 	Print(a...) // 解包 123 abc
 }
 

@@ -13,6 +13,6 @@ func main() {
 	}
 
 	for i := 0; i < cap(done); i++ {
-		<- done
+		<-done
 	}
 }

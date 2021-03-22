@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 	_ "net/http/pprof"
-	)
+)
 
 // 返回生成自然数序列的管道: 2, 3, 4, ...
 func GenerateNatural() chan int {

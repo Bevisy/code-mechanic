@@ -6,7 +6,7 @@ import (
 
 var (
 	instance1 *singleton
-	once     sync.Once
+	once      sync.Once
 )
 
 func Instance1() *singleton {

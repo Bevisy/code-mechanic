@@ -1,7 +1,7 @@
 package main
 
 func init() { // init()是一种特殊函数，可在同一文件内被多次创建
- println("hello")
+	println("hello")
 }
 
 func init() {
@@ -17,6 +17,6 @@ func main() {
 		done <- 1
 	}()
 
-	<- done
+	<-done
 	//select {}
 }

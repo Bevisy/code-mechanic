@@ -5,7 +5,7 @@ import (
 	"sync/atomic"
 )
 
-type singleton struct {}
+type singleton struct{}
 
 var (
 	instance    *singleton

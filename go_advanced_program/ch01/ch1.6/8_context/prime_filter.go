@@ -11,7 +11,7 @@ func GenerateNatural(ctx context.Context) chan int {
 	go func() {
 		for i := 2; ; i++ {
 			select {
-			case <- ctx.Done():
+			case <-ctx.Done():
 				return
 			case ch <- i:
 			}
@@ -27,7 +27,7 @@ func PrimeFilter(ctx context.Context, in <-chan int, prime int) chan int {
 		for {
 			if i := <-in; i%prime != 0 {
 				select {
-				case <- ctx.Done():
+				case <-ctx.Done():
 					return
 				case out <- i:
 				}

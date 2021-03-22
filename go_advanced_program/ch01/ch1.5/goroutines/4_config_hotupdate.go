@@ -8,7 +8,7 @@ import (
 // 一个简化的生产者消费者模型：后台线程生成最新的配置信息；
 // 前台多个工作者线程获取最新的配置信息。所有线程共享配置信息资源
 
-func loadConfiguration() interface{}{
+func loadConfiguration() interface{} {
 	return new(interface{})
 }
 
@@ -31,4 +31,3 @@ func main() {
 		}()
 	}
 }
-
