@@ -1,7 +1,5 @@
 package leetcode
 
-import "fmt"
-
 //老师想给孩子们分发糖果，有 N 个孩子站成了一条直线，老师会根据每个孩子的表现，预先给他们评分。
 //
 //你需要按照以下要求，帮助老师给这些孩子分发糖果：
@@ -27,15 +25,19 @@ import "fmt"
 func candy(ratings []int) int {
 	size := len(ratings)
 	candy := make([]int, size)
+	// 遍历顺序：左-->右   左<右 ==> 右=左+1
 	for i := 0; i < size-1; i++ {
-		if ratings[i] > ratings[i+1] {
-			candy[i] = candy[i+1] + 1
+		if ratings[i] < ratings[i+1] {
+			candy[i+1] = candy[i] + 1
 		}
 	}
 
+	//fmt.Printf("%v\n", candy)
+
+	// 遍历顺序：右-->左   左>右 ==> 左=max(右+1, 左)
 	for i := size - 1; i > 0; i-- {
-		if ratings[i] > ratings[i-1] {
-			candy[i] = max(candy[i], candy[i-1]+1)
+		if ratings[i-1] > ratings[i] {
+			candy[i-1] = max(candy[i]+1, candy[i-1])
 		}
 	}
 
@@ -44,7 +46,7 @@ func candy(ratings []int) int {
 		sum += v
 	}
 
-	fmt.Printf("%v\n", candy)
+	//fmt.Printf("%v\n", candy)
 
 	return sum
 }
