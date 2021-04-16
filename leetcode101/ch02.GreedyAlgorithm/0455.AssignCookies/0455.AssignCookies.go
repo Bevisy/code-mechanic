@@ -24,6 +24,10 @@ import "sort"
 //你拥有的饼干数量和尺寸都足以让所有孩子满足。
 //所以你应该输出2.
 //
+//来源：力扣（LeetCode）
+//链接：https://leetcode-cn.com/problems/non-overlapping-intervals
+//著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+//
 func findContentChildren(g []int, s []int) int {
 	sort.Ints(g)
 	sort.Ints(s)

@@ -22,6 +22,10 @@ package leetcode
 //解释：你可以分别给这三个孩子分发 1、2、1 颗糖果。
 //第三个孩子只得到 1 颗糖果，这已满足上述两个条件。
 //
+//来源：力扣（LeetCode）
+//链接：https://leetcode-cn.com/problems/non-overlapping-intervals
+//著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+//
 func candy(ratings []int) int {
 	size := len(ratings)
 	candy := make([]int, size)
