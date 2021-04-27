@@ -38,7 +38,7 @@ func bubbleSort(array []int) []int {
 		}
 
 		if !isChanged {
-			break
+			return array
 		}
 	}
 
