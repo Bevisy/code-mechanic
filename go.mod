@@ -9,6 +9,7 @@ require (
 	github.com/bwmarrin/snowflake v0.3.0
 	github.com/gobwas/glob v0.2.3 // indirect
 	github.com/gocolly/colly v1.2.0
+	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang/protobuf v1.5.0
 	github.com/intel/govmm v0.0.0-20200731131613-547a8518098a // indirect
 	github.com/iovisor/bpftrace v0.11.4 // indirect

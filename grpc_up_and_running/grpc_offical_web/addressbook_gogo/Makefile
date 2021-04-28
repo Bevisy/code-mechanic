@@ -8,4 +8,4 @@ clean:
 	rm -f add_person list_people
 
 gen:
-	protoc -I=$GOPATH/src -I=. --go_out=. addressbook.proto
+	protoc -I=$$GOPATH/src -I=. --gofast_out=. addressbook.proto
