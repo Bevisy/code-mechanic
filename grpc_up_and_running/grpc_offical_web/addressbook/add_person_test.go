@@ -51,7 +51,7 @@ unknown
 	}
 	for i := 0; i < phones; i++ {
 		if !proto.Equal(got.Phones[i], want[i]) {
-			t.Errorf("want phone %q, got %q", *want[i], *got.Phones[i])
+			t.Errorf("want phone %q, got %q", want[i], got.Phones[i])
 		}
 
 	}
