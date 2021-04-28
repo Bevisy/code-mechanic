@@ -6,4 +6,3 @@ build:
 
 clean:
 	rm -f add_person list_people
-	> addressbook.txt
