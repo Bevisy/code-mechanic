@@ -2,9 +2,10 @@ package main
 
 import (
 	"fmt"
-	"github.com/bevisy/sample/goAdvancedProgram/ch01/ch1.6/4_publish_subscribe_pattern/pubsub"
 	"strings"
 	"time"
+
+	"github.com/bevisy/code-mechanic/go_advanced_program/ch01/ch1.6/4_publish_subscribe_pattern/pubsub"
 )
 
 func main() {
