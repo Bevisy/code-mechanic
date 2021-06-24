@@ -2,7 +2,8 @@ syntax = "proto3";
 
 package helloService;
 
-option go_package = "./helloService";
+// 生成文件位置和包名; 最少包含一个斜杠(slash)"/"
+option go_package = "./;helloService";
 
 service HelloService {
   rpc SayHello(HelloRequest) returns (HelloResponse);
