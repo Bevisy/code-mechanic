@@ -11,7 +11,7 @@ func Test(t *testing.T) {
 		{[]int{1, 0, 0, 0, 1}, 1, true},
 		{[]int{1, 0, 0, 0, 1}, 2, false},
 		{[]int{1, 0, 0, 0, 0, 1}, 2, false},
-		{[]int{0, 0, 1, 0, 0}, 1, true},
+		{[]int{0, 0, 1, 0, 0}, 1, false},
 	}
 
 	for _, test := range tests {

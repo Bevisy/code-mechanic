@@ -12,6 +12,7 @@ func canPlaceFlowers(flowerbed []int, n int) bool {
 		}
 	} else {
 		for i := 0; i < len(flowerbed); i++ {
+			// 数组首尾特殊处理
 			if i == 0 {
 				if flowerbed[0] == 0 && flowerbed[1] == 0 {
 					count++
@@ -22,10 +23,10 @@ func canPlaceFlowers(flowerbed []int, n int) bool {
 					count++
 					flowerbed[i] = 1
 				}
-			} else {
+			} else { // 处理数组中间位置
 				if flowerbed[i-1] == 0 && flowerbed[i+1] == 0 && flowerbed[i] == 0 {
 					count++
-					flowerbed[i] = 1
+					flowerbed[i] = 1 // 统计可种花的地，置为种花，避免后续误判
 				}
 			}
 		}
