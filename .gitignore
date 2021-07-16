@@ -17,3 +17,6 @@
 # IDE
 .idea
 .vscode
+
+# golang
+vendor
